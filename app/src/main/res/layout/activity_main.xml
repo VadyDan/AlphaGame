@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/Theme.AppCompat.NoActionBar"
+    android:background="@drawable/bghamel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10sp"
+    android:orientation="vertical"
+    tools:context="com.example.alphagame.MainActivity" >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/lang"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:padding="8sp"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="20sp"
+            android:background="@drawable/btn_style"
+            android:layout_gravity="left"
+            android:src="@drawable/rus"
+            android:contentDescription="TODO" />
+        <ImageButton
+            android:id="@+id/Muzika"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:padding="8sp"
+            android:scaleType="fitXY"
+            android:layout_marginBottom="20sp"
+            android:background="@drawable/btn_style"
+            android:layout_gravity="right"
+            app:srcCompat="@android:drawable/ic_menu_manage"
+            android:contentDescription="TODO" />
+    </FrameLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_games"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

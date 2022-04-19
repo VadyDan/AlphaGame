@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/Theme.AppCompat.NoActionBar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bghamel"
+    android:orientation="vertical"
+    tools:context=".SecondActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/backbutton"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:padding="8sp"
+            android:scaleType="fitXY"
+            android:layout_marginBottom="20sp"
+            android:background="@drawable/btn_style"
+            android:layout_gravity="left"
+            app:srcCompat="@android:drawable/ic_menu_manage"
+            android:contentDescription="TODO" />
+        <ImageButton
+            android:id="@+id/MusicInGame"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:padding="8sp"
+            android:scaleType="fitXY"
+            android:layout_marginBottom="20sp"
+            android:background="@drawable/btn_style"
+            android:layout_gravity="right"
+            app:srcCompat="@android:drawable/ic_menu_manage"
+            android:contentDescription="TODO" />
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/fragment_place"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
+
+</LinearLayout>
